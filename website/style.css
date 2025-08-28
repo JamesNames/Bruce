@@ -1,0 +1,64 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #fefefe;
+}
+header {
+  background: #e74c3c;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+nav li { margin: 0 15px; }
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a.active,
+nav a:hover { text-decoration: underline; }
+.hero {
+  background: url('https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+.hero .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #c0392b;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+section { padding: 40px 20px; }
+#contacts a { color: #e74c3c; }
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+.menu-list {
+  list-style: none;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.menu-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+.price { font-weight: bold; }
+@media (max-width: 600px) {
+  nav ul { flex-direction: column; }
+}
